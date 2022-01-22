@@ -1,5 +1,5 @@
-@import "./common/common.wxss";
-@import "./common/reset.wxss";
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
 
 .container{
   width: 100%;
@@ -20,7 +20,7 @@
   font-size: 32rpx;
   color:#666;
   font-weight: 600;
-  margin:0 10rpx;
+  margin: 10rpx;
   white-space: nowrap;
 }
 .chip_state_checked
@@ -32,6 +32,6 @@
   align-items: center;
   color: #fff;
   font-weight: 600;
-  margin:0 10rpx;
+  margin:10rpx;
   white-space: nowrap;
 }

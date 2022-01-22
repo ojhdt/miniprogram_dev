@@ -1,0 +1,5 @@
+<view class="container" style="margin:0">
+  <view class="prefix">{{prefix}}</view>
+  <input class="input" value="{{value}}" bindinput="_input" placeholder="{{placeholder}}" type="{{type}}" disabled="{{disabled}}"></input>
+  <view class="suffix">{{suffix}}</view>
+</view>

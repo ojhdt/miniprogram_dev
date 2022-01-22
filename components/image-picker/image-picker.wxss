@@ -1,5 +1,5 @@
-@import "./common/common.wxss";
-@import "./common/reset.wxss";
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
 
 .container {
   width: 100%;

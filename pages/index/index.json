@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "image_picker": "../../components/image_picker",
-    "chips_selector": "../../components/chips_selector"
+    "image-picker": "../../components/image-picker/image-picker",
+    "chips-selector": "../../components/chips-selector/chips-selector",
+    "edit-textview": "../../components/edit-textview/edit-textview"
   }
 }

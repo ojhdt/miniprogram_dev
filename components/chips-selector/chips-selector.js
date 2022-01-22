@@ -1,4 +1,4 @@
-const _ = require('./common/utils')
+const _ = require('../common/utils')
 
 Component({
   /**
@@ -27,11 +27,25 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    clickChip: function (e) {
-      console.log(e)
+    getSelectedIndex: function(){
+      return this.data.selectedIndex
+    },
+
+    getCurrentValue: function(){
+      return this.data.chipsArr[this.data.selectedIndex]
+    },
+
+    _clickChip: function (e) {
+      // console.log(e)
       this.setData({
         selectedIndex: parseInt(e.target.id),
       })
+      let detail = {
+        chipsArr: this.data.chipsArr,
+        selectedIndex: this.data.selectedIndex,
+        currentValue: this.data.chipsArr[this.data.selectedIndex]
+      }
+      this.triggerEvent("change", detail, {})
     },
   },
   lifetimes: {

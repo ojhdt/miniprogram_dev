@@ -1,4 +1,4 @@
-const _ = require('./common/utils')
+const _ = require('../common/utils')
 
 Component({
   /**

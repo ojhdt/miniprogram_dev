@@ -1,4 +1,4 @@
-const _ = require('./common/utils')
+const _ = require('../common/utils')
 
 Component({
   /**
@@ -22,6 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    getSelectedImgArr() {
+      returncthis.data.selectedImgArr
+    },
+
     _previewImage(e) {
       wx.previewImage({
         urls: [].concat(e.target.id),
