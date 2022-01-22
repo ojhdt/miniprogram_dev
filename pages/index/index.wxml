@@ -8,4 +8,7 @@
   <block-preference title="aaa" imgSrc="../assets/icon_delete.png"></block-preference>
 </preference-container> -->
 
-<preference title="aaa" imgSrc="../assets/icon_delete.png" ></preference>
+<!-- <preference-container bindclick="foo" spanSize="{{1}}">
+  <preference title="aaa" iconMainSrc="../assets/icon_next.png"></preference>
+  <preference title="aaa"></preference>
+</preference-container> -->

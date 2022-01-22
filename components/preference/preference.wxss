@@ -23,12 +23,15 @@
 
 .title {
   position: absolute;
-  left: 100rpx
+  left: 120rpx
 }
 
-.icon_main {}
+.icon_main {
+  position: absolute;
+  left: 40rpx;
+}
 
 .icon_custom {
   position: absolute;
-  right: 10rpx
+  right: 20rpx
 }

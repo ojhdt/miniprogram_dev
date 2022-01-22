@@ -33,6 +33,7 @@ Component({
    */
   methods: {
     _click() {
+      console.log(this.data.iconMainSrc)
       let detail = {
         title: this.data.title
       }
