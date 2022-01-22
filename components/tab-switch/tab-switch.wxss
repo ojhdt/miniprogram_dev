@@ -1,0 +1,30 @@
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
+
+.container {
+  z-index: 2;
+  background-color: white;
+}
+
+.scroll_view {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 70rpx;
+  z-index: 100;
+}
+
+.nav {
+  width: 25%;
+  display: inline-block;
+  white-space: normal;
+  text-align: center;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.selected {
+  font-size: 32rpx;
+  color: #ED8B2F;
+  font-weight: bold;
+}

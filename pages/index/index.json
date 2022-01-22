@@ -6,6 +6,7 @@
     "rich-textview": "../../components/rich-textview/rich-textview",
     "block-preference": "../../components/block-preference/block-preference",
     "preference": "../../components/preference/preference",
-    "preference-container": "../../components/preference-container/preference-container"
+    "preference-container": "../../components/preference-container/preference-container",
+    "tab-switch": "../../components/tab-switch/tab-switch"
   }
 }

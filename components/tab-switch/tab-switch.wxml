@@ -1,0 +1,8 @@
+<view class='container'>
+  <scroll-view class="scroll_view" scroll-x="true" scroll-left="{{scrollX}}" scroll-with-animation="{{true}}">
+    <view class='nav {{index == selectedIndex ?"selected":""}}' wx:for="{{navArr}}" wx:key="index" data-index="{{index}}" bindtap='_navClick'>
+      <view>{{item}}</view>
+      <span></span>
+    </view>
+  </scroll-view>
+</view>

@@ -12,3 +12,5 @@
   <preference title="aaa" iconMainSrc="../assets/icon_next.png"></preference>
   <preference title="aaa"></preference>
 </preference-container> -->
+
+<tab-switch navArr="{{['aa','bb','cc','dd','ee']}}" selectedIndex="{{4}}" bindswitch="foo"></tab-switch>
