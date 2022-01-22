@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "image_uploader": "../../components/image_uploader"
+    "image_picker": "../../components/image_picker"
   }
 }
