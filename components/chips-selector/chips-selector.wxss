@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 10rpx;
 }
 
 .chip_state_unchecked
@@ -20,7 +21,7 @@
   font-size: 32rpx;
   color:#666;
   font-weight: 600;
-  margin: 10rpx;
+  /* margin: 10rpx; */
   white-space: nowrap;
 }
 .chip_state_checked
@@ -32,6 +33,6 @@
   align-items: center;
   color: #fff;
   font-weight: 600;
-  margin:10rpx;
+  /* margin:10rpx; */
   white-space: nowrap;
 }

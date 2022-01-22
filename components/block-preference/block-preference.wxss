@@ -1,0 +1,31 @@
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
+
+.container {
+  height: 200rpx;
+  width: 100%;
+  border-radius: 30rpx;
+  background: radial-gradient(#FFCD71, #ED8B2F);
+  font-size: 40rpx;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.container:active {
+  background: radial-gradient(#ffda94, #f8af6b);
+}
+
+.image {
+  width: 150rpx;
+  height: 140rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx
+}
+
+.title {
+  position: absolute;
+  right: 50rpx;
+  bottom: 30rpx;
+}

@@ -1,3 +1,11 @@
 <!-- <image-picker class="image_picker" bindchange="foo"></image-picker> -->
 <!-- <chips-selector bindchange="foo" class="chips_selector" chipsArr="{{['aa','bb','cc','dd','ee','ff']}}" selectedIndex="{{1}}"></chips-selector> -->
-<edit-textview suffix="123" prefix="456" value="123" bindinput="foo" regex="1243" placeholder="12321"></edit-textview>
+<!-- <edit-textview suffix="123" prefix="456" value="123" bindinput="foo" regex="1243" placeholder="12321"></edit-textview> -->
+<!-- <rich-textview bindinput="foo" placeholder="aaa" minHeight="{{600}}"></rich-textview> -->
+<!-- <preference-container bindclick="foo" spanSize="{{2}}">
+  <block-preference title="aaa" imgSrc="../assets/icon_delete.png"></block-preference>
+  <block-preference title="aaa" imgSrc="../assets/icon_delete.png"></block-preference>
+  <block-preference title="aaa" imgSrc="../assets/icon_delete.png"></block-preference>
+</preference-container> -->
+
+<preference title="aaa" imgSrc="../assets/icon_delete.png" ></preference>

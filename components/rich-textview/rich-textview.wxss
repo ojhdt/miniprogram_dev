@@ -1,2 +1,16 @@
 @import "../common/common.wxss";
 @import "../common/reset.wxss";
+
+.container {
+  width: 100%;
+  border: 1rpx solid #FFCD71;
+  border-radius: 40rpx;
+  margin-top: 2%;
+}
+
+.textarea {
+  width: 100%;
+  padding: 2% 4%;
+  font-size: 32rpx;
+  z-index: 0
+}

@@ -2,6 +2,10 @@
   "usingComponents": {
     "image-picker": "../../components/image-picker/image-picker",
     "chips-selector": "../../components/chips-selector/chips-selector",
-    "edit-textview": "../../components/edit-textview/edit-textview"
+    "edit-textview": "../../components/edit-textview/edit-textview",
+    "rich-textview": "../../components/rich-textview/rich-textview",
+    "block-preference": "../../components/block-preference/block-preference",
+    "preference": "../../components/preference/preference",
+    "preference-container": "../../components/preference-container/preference-container"
   }
 }

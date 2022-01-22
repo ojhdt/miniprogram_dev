@@ -1,0 +1,7 @@
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
+
+.container {
+  width: 100%;
+  display: grid;
+}
