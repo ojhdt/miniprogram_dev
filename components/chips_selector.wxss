@@ -1,0 +1,34 @@
+@import "./common/common.wxss";
+@import "./common/reset.wxss";
+
+.container{
+  width: 100%;
+  padding: 3% 0;
+}
+
+.chip_state_unchecked
+{
+  height: 70rpx;
+  width: 175rpx;
+  border:2rpx solid #FFCD71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color:#666;
+  font-weight: 600;
+  margin:0 10rpx;
+  white-space: nowrap;
+}
+.chip_state_checked
+{
+  background-color: #FFCD71;
+  border:2rpx solid #FFCD71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  margin:0 10rpx;
+  white-space: nowrap;
+}

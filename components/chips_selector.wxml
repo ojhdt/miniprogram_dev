@@ -1,0 +1,3 @@
+<view class="container">
+  <view wx:for="{{chipsArr}}" wx:key="index" class="chip_state_unchecked {{index == selectedIndex ? 'chip_state_checked' : ''}}" id="{{index}}" bindtap="clickChip">{{chipsArr[index]}}</view>
+</view>

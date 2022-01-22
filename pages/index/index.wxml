@@ -1,2 +1,2 @@
 <image_picker class="image_picker"></image_picker>
-<button bindtap="tap">aaa</button>
+<!-- <chips_selector class="chips_selector" chipsArr="{{['aa','bb']}}"></chips_selector> -->

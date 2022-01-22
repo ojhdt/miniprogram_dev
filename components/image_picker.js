@@ -33,7 +33,9 @@ Component({
           selectedImgArr: []
         })
       } else {
-        let temp = this.data.selectedImgArr.filter(n => n != e.currentTarget.dataset.id)
+        console.log(e)
+        let temp = this.data.selectedImgArr
+        temp.splice(e.currentTarget.dataset.id, 1)
         this.setData({
           selectedImgArr: temp
         })
@@ -61,7 +63,9 @@ Component({
   },
   lifetimes: {
     attached() {
-
+      this.setData({
+        selectedImgArr: this.properties.selectedImgArr
+      })
     }
   }
 })
