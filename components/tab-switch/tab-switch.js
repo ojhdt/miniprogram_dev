@@ -12,6 +12,10 @@ Component({
     selectedIndex: {
       type: Number,
       value: 0
+    },
+    indicator: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -22,6 +26,7 @@ Component({
     navArr: [],
     selectedIndex: 0,
     scrollX: 0,
+    indicatorLeft: 0,
   },
 
   /**
@@ -33,7 +38,8 @@ Component({
       let res = this._getScrollX(index)
       this.setData({
         scrollX: res,
-        selectedIndex: index
+        selectedIndex: index,
+        indicatorLeft: this._getIndicatorLeft(index)
       })
       let detail = {
         navArr: this.data.navArr,
@@ -41,6 +47,12 @@ Component({
         currentValue: this.data.navArr[this.data.selectedIndex]
       }
       this.triggerEvent("switch", detail, {})
+    },
+
+    _getIndicatorLeft(index){
+      let screenWidth = wx.getSystemInfoSync().windowWidth;
+      let itemWidth = screenWidth / 4;
+      return index * itemWidth + itemWidth / 2
     },
 
     _getScrollX(index) {
@@ -60,11 +72,12 @@ Component({
   lifetimes: {
     attached() {
       if (this.properties.selectedIndex != null && this.properties.selectedIndex > this.properties.navArr.length - 1) throw 'illegal input'
-      let res = this._getScrollX(this.properties.selectedIndex)
       this.setData({
         navArr: this.properties.navArr,
         selectedIndex: this.properties.selectedIndex,
-        scrollX: res
+        scrollX: this._getScrollX(this.properties.selectedIndex),
+        indicator: this.properties.indicator,
+        indicatorLeft: this._getIndicatorLeft(this.properties.selectedIndex)
       })
     }
   }

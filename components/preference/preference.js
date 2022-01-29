@@ -1,21 +1,25 @@
 const _ = require('../common/utils')
 
 Component({
+  options: {
+    multipleSlots: true
+  },
+
   /**
    * 组件的属性列表
    */
   properties: {
-    iconMainSrc: {
-      type: String,
-      value: ""
-    },
     title: {
       type: String,
       value: ""
     },
-    iconCustomSrc: {
+    targetUrl:{
       type: String,
-      value: "../assets/icon_next.png"
+      value: null
+    },
+    theme:{
+      type: String,
+      value: "default"
     }
   },
 
@@ -23,9 +27,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    iconMainSrc: "",
-    iconCustomSrc: "",
-    title: ""
+    title: "",
+    theme: "default",
+    targetUrl: null,
   },
 
   /**
@@ -33,7 +37,11 @@ Component({
    */
   methods: {
     _click() {
-      console.log(this.data.iconMainSrc)
+      if(this.data.targetUrl != null){
+        wx.navigateTo({
+          url: this.data.targetUrl,
+        })
+      }
       let detail = {
         title: this.data.title
       }
@@ -47,9 +55,13 @@ Component({
     attached() {
       this.setData({
         title: this.properties.title,
-        iconMainSrc: this.properties.iconMainSrc,
-        iconCustomSrc: this.properties.iconCustomSrc
+        theme: this.properties.theme
       })
+      if(this.properties.targetUrl != null){
+        this.setData({
+          targetUrl: this.properties.targetUrl
+        })
+      }
     }
   }
 })

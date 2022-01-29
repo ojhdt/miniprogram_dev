@@ -5,12 +5,13 @@
   width: 100%;
   border: 1rpx solid #FFCD71;
   border-radius: 40rpx;
-  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  padding: 10rpx 0;
 }
 
 .textarea {
-  width: 100%;
-  padding: 2% 4%;
+  width: 90%;
   font-size: 32rpx;
   z-index: 0
 }

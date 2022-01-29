@@ -4,5 +4,6 @@
       <view>{{item}}</view>
       <span></span>
     </view>
+    <view class="indicator" style="display:{{indicator?'inline':'none'}}; left: {{indicatorLeft}}px;"></view>
   </scroll-view>
 </view>

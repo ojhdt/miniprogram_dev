@@ -1,5 +1,10 @@
-<view class="container" bindtap="_click">
-  <image src="{{iconMainSrc}}" class="icon icon_main"></image>
+<view class="container {{theme}}" bindtap="_click">
+  <view class="main">
+    <slot name="mainLayout"></slot>
+  </view>
+
   <view class="title">{{title}}</view>
-  <image src="{{iconCustomSrc}}" class="icon icon_custom"></image>
+  <view class="custom">
+    <slot name="customLayout"></slot>
+  </view>
 </view>

@@ -13,11 +13,11 @@ Component({
       type: String,
       value: ""
     },
-    minHeight:{
+    minHeight: {
       type: Number,
       value: 400
     },
-    disabled:{
+    disabled: {
       type: Boolean,
       value: false
     }
@@ -30,19 +30,23 @@ Component({
     value: "",
     placeholder: "",
     disabled: false,
+    maxLength: 200,
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    getValue(){
+    getValue() {
       return this.data.value
     },
 
-    _input(e){
+    _input(e) {
+      console.log(e)
+      let value = e.detail.value
+      let newValue = value.replace(/[<>&]/g, '_')
       let detail = {
-        value: e.detail.value
+        value: newValue
       }
       this.triggerEvent("input", detail, {})
     }
@@ -55,6 +59,11 @@ Component({
         disabled: this.properties.disabled,
         minHeight: this.properties.minHeight
       })
+      if (this.properties.maxLength != null) {
+        this.setData({
+          maxLength: this.properties.maxLength
+        })
+      }
     }
   }
 })

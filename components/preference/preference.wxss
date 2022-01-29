@@ -1,12 +1,7 @@
 @import "../common/common.wxss";
 @import "../common/reset.wxss";
 
-.icon {
-  height: 60rpx;
-  width: 60rpx;
-}
-
-.container {
+.default {
   height: 110rpx;
   width: 100%;
   border-radius: 100rpx;
@@ -17,21 +12,58 @@
   position: relative;
 }
 
-.container:active {
+.default:active {
   background-color: rgb(245, 245, 245);
 }
 
-.title {
+.default .main {
+  position: absolute;
+  left: 40rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.default .custom {
+  height: 60rpx;
+  width: 60rpx;
+  position: absolute;
+  right: 20rpx
+}
+
+.default .title {
   position: absolute;
   left: 120rpx
 }
 
-.icon_main {
-  position: absolute;
-  left: 40rpx;
+.block{
+  height: 200rpx;
+  width: 100%;
+  border-radius: 30rpx;
+  background: radial-gradient(#FFCD71, #ED8B2F);
+  font-size: 40rpx;
+  font-weight: 600;
+  color: white;
+  position: relative;
 }
 
-.icon_custom {
+.block:active{
+  background: radial-gradient(#ffda94, #f8af6b);
+}
+
+.block .main {
+  width: 150rpx;
+  height: 150rpx;
   position: absolute;
-  right: 20rpx
+  top: 30rpx;
+  left: 40rpx
+}
+
+.block .title {
+  position: absolute;
+  right: 50rpx;
+  bottom: 30rpx;
+}
+
+.block .custom{
+  display: none;
 }
