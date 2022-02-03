@@ -18,4 +18,5 @@
 
 <!-- <tab-switch navArr="{{['aa','bb','cc','dd','ee']}}" selectedIndex="{{3}}" indicator="{{false}}" bindswitch="foo"></tab-switch> -->
 <!-- <view style="width: 100%; height:100rpx;"></view> -->
-<filter data="{{filterData}}" selected="{{[0,0,2]}}" isPoppingUp="{{true}}"></filter>
+<!-- <filter data="{{filterData}}" selected="{{[0,0,2]}}" isPoppingUp="{{true}}" bindconfirm="foo"></filter> -->
+<image-swiper srcs="{{['../../components/assets/1.jpg', '../../components/assets/2.jpg', '../../components/assets/3.png']}}"></image-swiper>

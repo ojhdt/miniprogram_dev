@@ -8,6 +8,7 @@
     "preference": "../../components/preference/preference",
     "preference-container": "../../components/preference-container/preference-container",
     "tab-switch": "../../components/tab-switch/tab-switch",
-    "filter": "../../components/filter/filter"
+    "filter": "../../components/filter/filter",
+    "image-swiper": "../../components/image-swiper/image-swiper"
   }
 }

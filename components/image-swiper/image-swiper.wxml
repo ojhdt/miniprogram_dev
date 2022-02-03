@@ -1,0 +1,9 @@
+<view class="container" style="height: {{height}}rpx;">
+  <swiper circular autoplay class="swiper" bindtransition="_aniStart" bindanimationfinish="_aniEnd" easing-function="easeInOutCubic">
+    <block wx:for="{{srcs}}" wx:key="index">
+      <swiper-item class="items">
+        <image bindtap="_onImageTap" class="item {{animating?'shrink':''}}" src="{{item}}" data-index="{{index}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
