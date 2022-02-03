@@ -7,6 +7,7 @@
     "block-preference": "../../components/block-preference/block-preference",
     "preference": "../../components/preference/preference",
     "preference-container": "../../components/preference-container/preference-container",
-    "tab-switch": "../../components/tab-switch/tab-switch"
+    "tab-switch": "../../components/tab-switch/tab-switch",
+    "filter": "../../components/filter/filter"
   }
 }

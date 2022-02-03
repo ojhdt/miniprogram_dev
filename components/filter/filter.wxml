@@ -1,0 +1,18 @@
+<view class="shadow" style="opacity: {{isPoppingUp?'.6':'0'}};" bindtap="_onCancel"></view>
+<view class="container">
+  <view class="category">
+    <block wx:for="{{value}}" wx:key="index">
+      <view class="category_item" data-index="{{index}}" bindtap="_onCategoryBtnClick">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="dialog" style="transform: translateY({{isPoppingUp?'0':'-100%'}});">
+    <view class="display">
+      <scroll-view class="column" scroll-y="true" wx:for="{{tempValue}}" wx:key="index" wx:for-index="columnIndex" enable-flex="true">
+        <block wx:for="{{tempValue[columnIndex]}}" wx:for-item="item" wx:key="index">
+          <view class="item {{selected[columnIndex+1]==index?'item_selected':''}}" bindtap="_updateSelection" data-columnIndex="{{columnIndex}}" data-index="{{index}}">{{item}}</view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="confirm_btn" bindtap="_onConfirm">确认</view>
+  </view>
+</view>

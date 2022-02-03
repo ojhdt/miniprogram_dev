@@ -44,7 +44,7 @@ Component({
     _input(e) {
       console.log(e)
       let value = e.detail.value
-      let newValue = value.replace(/[<>&]/g, '_')
+      let newValue = value.replace(/[<>&'?!]/g, '_')
       let detail = {
         value: newValue
       }

@@ -1,19 +1,21 @@
 <!-- <image-picker class="image_picker" bindchange="foo"></image-picker> -->
 <!-- <chips-selector bindchange="foo" class="chips_selector" chipsArr="{{['aa','bb','cc','dd','ee','ff']}}" selectedIndex="{{1}}"></chips-selector> -->
 <!-- <edit-textview suffix="123" prefix="456" value="123" bindinput="foo" regex="" placeholder="12321"></edit-textview> -->
-<!-- <rich-textview bindinput="foo" placeholder="aaa" minHeight="{{300}}"></rich-textview>//防止xxs攻击,json,script -->
+<!-- <rich-textview bindinput="foo" placeholder="aaa" minHeight="{{300}}"></rich-textview> -->
 <!-- <preference-container bindclick="foo" spanSize="{{1}}">
   <preference title="title">
     <view slot="mainLayout" style="width: 100%; height: 100%; background-color: aqua;"></view>
     <view slot="customLayout" style="width: 100%; height: 100%; background-color: yellow;"></view>
   </preference>
-</preference-container> -->
+</preference-container>
 
-<!-- <preference-container bindclick="foo" spanSize="{{2}}">
+<preference-container bindclick="foo" spanSize="{{2}}">
   <preference theme="block" title="aaa">
     <view slot="mainLayout" style="width: 100%; height: 100%; background-color: aqua;"></view>
     <view slot="customLayout" style="width: 100%; height: 100%; background-color: yellow;"></view>
   </preference>
 </preference-container> -->
 
-<tab-switch navArr="{{['aa','bb','cc','dd','ee']}}" selectedIndex="{{3}}" indicator="{{false}}" bindswitch="foo"></tab-switch>
+<!-- <tab-switch navArr="{{['aa','bb','cc','dd','ee']}}" selectedIndex="{{3}}" indicator="{{false}}" bindswitch="foo"></tab-switch> -->
+<!-- <view style="width: 100%; height:100rpx;"></view> -->
+<filter data="{{filterData}}" selected="{{[0,0,2]}}" isPoppingUp="{{true}}"></filter>
