@@ -25,6 +25,7 @@ Component({
   data: {
     value: [],
     selected: [],
+    categorySelected: -1,
     tempValue: [],
     isPoppingUp: false
   },
@@ -61,6 +62,17 @@ Component({
       let newSelected = this.data.selected
       newSelected.fill(0)
       newSelected[0] = index
+      let categoryCheckSelected = Array.from(newSelected)
+      categoryCheckSelected.shift()
+      if (categoryCheckSelected.toString() != (new Array(categoryCheckSelected.length)).fill(0).toString()) {
+        this.setData({
+          categorySelected: newSelected[0]
+        })
+      } else {
+        this.setData({
+          categorySelected: -1
+        })
+      }
       this.setData({
         selected: newSelected
       })
@@ -71,6 +83,17 @@ Component({
     _updateSelection(e) {
       let newSelected = this.data.selected
       newSelected[e.currentTarget.dataset.columnindex + 1] = e.currentTarget.dataset.index
+      let categoryCheckSelected = Array.from(newSelected)
+      categoryCheckSelected.shift()
+      if (categoryCheckSelected.toString() != (new Array(categoryCheckSelected.length)).fill(0).toString()) {
+        this.setData({
+          categorySelected: newSelected[0]
+        })
+      } else {
+        this.setData({
+          categorySelected: -1
+        })
+      }
       this.setData({
         selected: newSelected
       })

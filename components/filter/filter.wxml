@@ -2,7 +2,7 @@
 <view class="container">
   <view class="category">
     <block wx:for="{{value}}" wx:key="index">
-      <view class="category_item" data-index="{{index}}" bindtap="_onCategoryBtnClick">{{item.name}}</view>
+      <view class="category_item {{categorySelected==index?'category_item_selected':''}}" data-index="{{index}}" bindtap="_onCategoryBtnClick">{{item.name}}</view>
     </block>
   </view>
   <view class="dialog" style="transform: translateY({{isPoppingUp?'0':'-100%'}});">

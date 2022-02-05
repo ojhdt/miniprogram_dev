@@ -29,6 +29,11 @@
   font-size: 32rpx;
 }
 
+.category_item_selected{
+  background-color: #FFCD71;
+  color: white;
+}
+
 .shadow {
   position: fixed;
   width: 100%;
