@@ -1,8 +1,8 @@
 <view class="container" style="height: {{height}}rpx;">
-  <swiper circular autoplay class="swiper" bindtransition="_aniStart" bindanimationfinish="_aniEnd" easing-function="easeInOutCubic">
+  <swiper circular autoplay class="swiper" previous-margin="50rpx" next-margin="50rpx" bindchange="_change" bindtransition="_aniStart" bindanimationfinish="_aniEnd" easing-function="easeInOutCubic">
     <block wx:for="{{srcs}}" wx:key="index">
       <swiper-item class="items">
-        <image bindtap="_onImageTap" class="item {{animating?'shrink':''}}" src="{{item}}" data-index="{{index}}" mode="aspectFill"></image>
+        <image bindtap="_onImageTap" class="item {{index == currentIndex?'':'shrink'}}" src="{{item}}" data-index="{{index}}" mode="aspectFill"></image>
       </swiper-item>
     </block>
   </swiper>

@@ -20,9 +20,10 @@
   height: 100%;
   transition: all .2s ease-in-out;
   border-radius: 15rpx;
+  opacity: 1;
 }
 
 .shrink{
-  width: 90%;
   height: 90%;
+  opacity:.5;
 }

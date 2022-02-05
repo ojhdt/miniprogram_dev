@@ -22,24 +22,23 @@ Component({
     height: 0,
     srcs: [],
     currentIndex: 0,
-    animating: false
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    _change(e){
+      this.setData({
+        currentIndex: e.detail.current
+      })
+    },
+
     _aniStart(){
-      if(!this.data.animating){
-        this.setData({
-          animating: true
-        })
-      }
+
     },
     _aniEnd(){
-      this.setData({
-        animating: false
-      })
+
     },
     _onImageTap(e){
       let index = e.currentTarget.dataset.index
