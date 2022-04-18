@@ -9,6 +9,8 @@
     "preference-container": "../../components/preference-container/preference-container",
     "tab-switch": "../../components/tab-switch/tab-switch",
     "filter": "../../components/filter/filter",
-    "image-swiper": "../../components/image-swiper/image-swiper"
+    "image-swiper": "../../components/image-swiper/image-swiper",
+    "bottom-sheet-dialog": "../../components/bottom-sheet-dialog/bottom-sheet-dialog",
+    "bulletin-swiper": "../../components/bulletin-swiper/bulletin-swiper"
   }
 }

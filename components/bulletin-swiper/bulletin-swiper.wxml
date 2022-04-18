@@ -1,0 +1,14 @@
+<view class="container" style="height: {{height}}rpx;">
+  <swiper circular autoplay class="swiper" bindchange="_change" bindtransition="_aniStart" bindanimationfinish="_aniEnd" easing-function="easeInOutCubic">
+    <block wx:for="{{srcs}}" wx:key="index">
+      <swiper-item class="items">
+        <image bindtap="_onImageTap" class="item" src="{{item}}" data-index="{{index}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+      <block wx:for="{{srcs}}" wx:key="index">
+        <view class="dot {{index == currentIndex?'selected':''}}"></view>
+      </block>
+    </view>
+</view>

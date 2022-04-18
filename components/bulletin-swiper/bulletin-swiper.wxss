@@ -1,0 +1,42 @@
+@import "../common/common.wxss";
+@import "../common/reset.wxss";
+
+.container{
+  width: 100%;
+  position: relative;
+}
+
+.swiper{
+  height: 100%;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item{
+  border-radius: 15rpx;
+}
+
+.dots{
+  position: absolute;
+  right: 15rpx;
+  bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: white;
+  opacity: .6;
+  margin: 0 4px 0 0;
+}
+
+.selected{
+  opacity: 1;
+}

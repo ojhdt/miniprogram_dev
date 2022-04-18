@@ -1,0 +1,35 @@
+<view class="shadow" style="opacity: {{isPoppingUp?'.6':'0'}};" bindtap="onCancel"></view>
+<view class="container" style="transform: translateY({{isPoppingUp?'0':'100%'}});">
+  <view class="list">
+    <!-- <view class="list_item">
+      <view class="list_item_left">
+        <view class="icon material-icons"><text></text></view>
+        <input type="text" value="{{defaultContent}}" maxlength="8" bindinput="defaultListInput" focus="true"
+          data-index="-1"></input>
+      </view>
+      <view class="list_item_right">
+      </view>
+    </view> -->
+    <view class="list_item"
+      style="top:{{item.top}}px;{{item.dragging?'box-shadow: 0 0 10rpx #bbb;background:#fff;z-index:999;':''}}{{listDragging&&!item.dragging?'transition:top .2s ease,box-shadow .2s ease-in-out;':''}}"
+      wx:for="{{listData}}" wx:key="index" data-index="{{index}}">
+      <view class="list_item_left">
+        <view class="icon material-icons" hover-class="hover" catchtouchstart="dragStart" catchtouchmove="dragMove"
+          catchtouchend="dragEnd" data-index="{{index}}"><text>drag_indicator</text></view>
+        <input type="text" value="{{item.content}}" maxlength="8" bindinput="listInput" focus="true"
+          data-index="{{index}}"></input>
+      </view>
+      <view class="list_item_right">
+        <view class="icon material-icons" hover-class="hover" bindtap="listDeleteItem" data-index="{{index}}">
+          <text>close</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="list_add_item" hover-class="hover" bindtap="listAddItem">
+    <view class="icon material-icons" hover-class="hover"><text>add</text></view>
+    <text>新增</text>
+  </view>
+  <view class="content_btn_l" style="color:{{primaryColor}};" hover-class="hover" bindtap="onCancel">取消</view>
+  <view class="content_btn_r" hover-class="c_hover" style="background:{{primaryColor}};" bindtap="onConfirm">保存
+  </view>
+</view>
