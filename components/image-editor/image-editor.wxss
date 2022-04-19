@@ -41,27 +41,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid #FFCD71;
+  border: 1px solid #FFCD71;
   color: gray;
   transition: all .2s ease-in-out;
 }
 
 .btns{
-  height: 100rpx;
-  display: flex;
-  flex-direction: row;
+  height: 80rpx;
+  display: grid;
   margin-top: 10rpx;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rpx;
 }
 
 .btn{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   font-size: small;
   border-radius: 10rpx;
-  border: solid #FFCD71;
-  margin: 10rpx;
+  border: 1px solid #FFCD71;
+  /* margin: 10rpx; */
   transition: all .2s ease-in-out;
 }
 

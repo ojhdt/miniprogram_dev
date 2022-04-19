@@ -14,7 +14,7 @@
     </view>
   </scroll-view>
   <view class="btns">
-    <view wx:if="{{!isEditting}}" bindtap="_edit" class="btn" hover-class="hover">
+    <view wx:if="{{!isEditting}}" style="grid-column-start: 1; grid-column-end: 3;" bindtap="_edit" class="btn" hover-class="hover">
       <text>编辑</text>
     </view>
     <view wx:if="{{isEditting}}" bindtap="_cancel" class="btn" hover-class="hover">
