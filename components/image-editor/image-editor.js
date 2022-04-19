@@ -92,7 +92,7 @@ Component({
 
     _cancel() {
       const that = this
-      console.log(this.data.backup)
+      // console.log(this.data.backup)
       setTimeout(() => {
         this.setData({
           oldSrcs: this.data.backup,

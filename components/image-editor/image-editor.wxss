@@ -9,7 +9,7 @@
 }
 
 .item{
-  flex: 1 0 350rpx;
+  flex: 0 0 350rpx;
   border-radius: 10rpx;
   width: 350rpx;
   margin: 0 20rpx 0 0;
