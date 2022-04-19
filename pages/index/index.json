@@ -11,6 +11,7 @@
     "filter": "../../components/filter/filter",
     "image-swiper": "../../components/image-swiper/image-swiper",
     "bottom-sheet-dialog": "../../components/bottom-sheet-dialog/bottom-sheet-dialog",
-    "bulletin-swiper": "../../components/bulletin-swiper/bulletin-swiper"
+    "bulletin-swiper": "../../components/bulletin-swiper/bulletin-swiper",
+    "image-editor": "../../components/image-editor/image-editor"
   }
 }

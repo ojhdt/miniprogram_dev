@@ -1,2 +1,70 @@
 @import "../common/common.wxss";
 @import "../common/reset.wxss";
+@import "../common/icon.wxss";
+
+.scroll{
+  display: flex;
+  height: 200rpx;
+  flex-wrap: nowrap;
+}
+
+.item{
+  flex: 1 0 350rpx;
+  border-radius: 10rpx;
+  width: 350rpx;
+  margin: 0 20rpx 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.item image{
+  width: 100%;
+  height: 100%;
+}
+
+.icon{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  background-color: rgba(255, 255, 255, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.add_more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #FFCD71;
+  color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.btns{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: small;
+  border-radius: 10rpx;
+  border: solid #FFCD71;
+  margin: 10rpx;
+  transition: all .2s ease-in-out;
+}
+
+.hover{
+  background-color: rgba(255, 205, 113, .6);
+}

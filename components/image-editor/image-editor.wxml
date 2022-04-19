@@ -1,0 +1,27 @@
+<view class="container">
+  <scroll-view scroll-x="true" class="scroll" enable-flex="true">
+    <view wx:for="{{oldSrcs}}" wx:key="index" class="item">
+      <image bindtap="_onImageTap" src="{{item}}" data-index="{{index}}" data-type="old" mode="aspectFill"></image>
+      <view wx:if="{{isEditting}}" class="icon material-icons" hover-class="hover" bindtap="_delete" data-type="old" data-index="{{index}}"><text>delete</text></view>
+    </view>
+    <view wx:for="{{newSrcs}}" wx:key="index" class="item">
+      <image bindtap="_onImageTap"  src="{{item}}" data-index="{{index}}" data-type="new" mode="aspectFill"></image>
+      <view wx:if="{{isEditting}}" class="icon material-icons" hover-class="hover" bindtap="_delete" data-type="new" data-index="{{index}}"><text>delete</text></view>
+    </view>
+    <view class="add_more item" hover-class="hover" bindtap="_chooseImage">
+      <view class="material-icons"><text>add</text></view>
+      <text>添加图片</text>
+    </view>
+  </scroll-view>
+  <view class="btns">
+    <view wx:if="{{!isEditting}}" bindtap="_edit" class="btn" hover-class="hover">
+      <text>编辑</text>
+    </view>
+    <view wx:if="{{isEditting}}" bindtap="_cancel" class="btn" hover-class="hover">
+      <text>取消</text>
+    </view>
+    <view wx:if="{{isEditting}}" bindtap="_save" class="btn" hover-class="hover">
+      <text>保存</text>
+    </view>
+  </view>
+</view>
